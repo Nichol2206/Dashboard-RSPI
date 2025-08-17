@@ -2,7 +2,7 @@
   "name": "dashboard-rspi",
   "private": true,
   "scripts": {
-    "postinstall": "git lfs install && git lfs fetch --all && git lfs checkout",
+    "postinstall": "node download-lfs.js",
     "build": "echo static"
   }
 }

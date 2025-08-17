@@ -1,1 +1,8 @@
-{  "name": "dashboard-rspi",  "private": true,  "scripts": {    "postinstall": "git lfs install && git lfs pull",    "build": "echo static"  }} 
+{
+  "name": "dashboard-rspi",
+  "private": true,
+  "scripts": {
+    "postinstall": "git lfs install && git lfs fetch --all && git lfs checkout",
+    "build": "echo static"
+  }
+}
